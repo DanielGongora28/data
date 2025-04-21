@@ -1,0 +1,732 @@
+{
+  "tblDepartamento": [
+    {
+      "IDDepartamento": 1,
+      "Nombre": "Antioquia"
+    },
+    {
+      "IDDepartamento": 2,
+      "Nombre": "Cundinamarca"
+    },
+    {
+      "IDDepartamento": 3,
+      "Nombre": "Valle del Cauca"
+    },
+    {
+      "IDDepartamento": 4,
+      "Nombre": "Atlántico"
+    },
+    {
+      "IDDepartamento": 5,
+      "Nombre": "Santander"
+    },
+    {
+      "IDDepartamento": 6,
+      "Nombre": "Bolívar"
+    }
+  ],
+  "tblCiudad": [
+    {
+      "IDCiudad": 1,
+      "Nombre": "Medellín",
+      "IDDepartamento": 1
+    },
+    {
+      "IDCiudad": 2,
+      "Nombre": "Bogotá",
+      "IDDepartamento": 2
+    },
+    {
+      "IDCiudad": 3,
+      "Nombre": "Cali",
+      "IDDepartamento": 3
+    },
+    {
+      "IDCiudad": 4,
+      "Nombre": "Barranquilla",
+      "IDDepartamento": 4
+    },
+    {
+      "IDCiudad": 5,
+      "Nombre": "Bucaramanga",
+      "IDDepartamento": 5
+    },
+    {
+      "IDCiudad": 6,
+      "Nombre": "Cartagena",
+      "IDDepartamento": 6
+    }
+  ],
+  "tblCliente": [
+    {
+      "IDCliente": 1,
+      "Identificacion": "123456789",
+      "Nombres": "Sofía",
+      "Apellidos": "Castiblanco",
+      "Direccion": "Calle 123",
+      "Telefono": "3010000000",
+      "IDCiudad": 1,
+      "Estado": "Activo"
+    },
+    {
+      "IDCliente": 2,
+      "Identificacion": "1001001001",
+      "Nombres": "Carlos",
+      "Apellidos": "Ramírez",
+      "Direccion": "Cra 10 #20-30",
+      "Telefono": "3101112233",
+      "IDCiudad": 2,
+      "Estado": "Activo"
+    },
+    {
+      "IDCliente": 3,
+      "Identificacion": "1001001002",
+      "Nombres": "Luisa",
+      "Apellidos": "Martínez",
+      "Direccion": "Calle 45 #12-50",
+      "Telefono": "3112223344",
+      "IDCiudad": 3,
+      "Estado": "Activo"
+    },
+    {
+      "IDCliente": 4,
+      "Identificacion": "1001001003",
+      "Nombres": "Andrés",
+      "Apellidos": "Gómez",
+      "Direccion": "Av. 1 #5-10",
+      "Telefono": "3123334455",
+      "IDCiudad": 4,
+      "Estado": "Inactivo"
+    },
+    {
+      "IDCliente": 5,
+      "Identificacion": "1001001004",
+      "Nombres": "Mariana",
+      "Apellidos": "López",
+      "Direccion": "Cl. 60 #25-90",
+      "Telefono": "3134445566",
+      "IDCiudad": 5,
+      "Estado": "Activo"
+    },
+    {
+      "IDCliente": 6,
+      "Identificacion": "1001001005",
+      "Nombres": "Santiago",
+      "Apellidos": "Torres",
+      "Direccion": "Cl. 72 #48-00",
+      "Telefono": "3145556677",
+      "IDCiudad": 6,
+      "Estado": "Inactivo"
+    }
+  ],
+  "tblEstado": [
+    {
+      "IDEstado": 1,
+      "Nombre": "Pendiente"
+    },
+    {
+      "IDEstado": 2,
+      "Nombre": "Pagado"
+    },
+    {
+      "IDEstado": 3,
+      "Nombre": "Anulado"
+    }
+  ],
+  "tblMedioPago": [
+    {
+      "IDMedioPago": 1,
+      "Nombre": "Efectivo"
+    },
+    {
+      "IDMedioPago": 2,
+      "Nombre": "Tarjeta Crédito"
+    },
+    {
+      "IDMedioPago": 3,
+      "Nombre": "Tarjeta Débito"
+    },
+    {
+      "IDMedioPago": 4,
+      "Nombre": "Transferencia"
+    }
+  ],
+  "tblFactura": [
+    {
+      "NroFactura": 1,
+      "Fecha": "2025-03-21",
+      "IDCliente": 1,
+      "IDMedioPago": 1,
+      "IDEstado": 1
+    },
+    {
+      "NroFactura": 2,
+      "Fecha": "2025-03-25",
+      "IDCliente": 1,
+      "IDMedioPago": 2,
+      "IDEstado": 1
+    },
+    {
+      "NroFactura": 3,
+      "Fecha": "2025-03-26",
+      "IDCliente": 1,
+      "IDMedioPago": 3,
+      "IDEstado": 1
+    },
+    {
+      "NroFactura": 4,
+      "Fecha": "2025-03-27",
+      "IDCliente": 1,
+      "IDMedioPago": 4,
+      "IDEstado": 1
+    },
+    {
+      "NroFactura": 5,
+      "Fecha": "2025-03-29",
+      "IDCliente": 1,
+      "IDMedioPago": 1,
+      "IDEstado": 2
+    },
+    {
+      "NroFactura": 6,
+      "Fecha": "2025-03-26",
+      "IDCliente": 1,
+      "IDMedioPago": 2,
+      "IDEstado": 2
+    },
+    {
+      "NroFactura": 7,
+      "Fecha": "2025-03-29",
+      "IDCliente": 1,
+      "IDMedioPago": 3,
+      "IDEstado": 2
+    },
+    {
+      "NroFactura": 8,
+      "Fecha": "2025-03-31",
+      "IDCliente": 1,
+      "IDMedioPago": 4,
+      "IDEstado": 2
+    },
+    {
+      "NroFactura": 9,
+      "Fecha": "2025-04-11",
+      "IDCliente": 1,
+      "IDMedioPago": 1,
+      "IDEstado": 3
+    },
+    {
+      "NroFactura": 10,
+      "Fecha": "2025-03-29",
+      "IDCliente": 1,
+      "IDMedioPago": 2,
+      "IDEstado": 3
+    },
+    {
+      "NroFactura": 11,
+      "Fecha": "2025-03-31",
+      "IDCliente": 1,
+      "IDMedioPago": 3,
+      "IDEstado": 3
+    },
+    {
+      "NroFactura": 12,
+      "Fecha": "2025-03-31",
+      "IDCliente": 1,
+      "IDMedioPago": 4,
+      "IDEstado": 3
+    }
+  ],
+  "tblProducto": [
+    {
+      "IDProducto": 1,
+      "Nombre": "Laptop",
+      "IDClasificacion": 1,
+      "Precio": 3000.0,
+      "Estado": "Activo"
+    },
+    {
+      "IDProducto": 2,
+      "Nombre": "Silla",
+      "IDClasificacion": 2,
+      "Precio": 150.0,
+      "Estado": "Activo"
+    },
+    {
+      "IDProducto": 3,
+      "Nombre": "Manzanas",
+      "IDClasificacion": 3,
+      "Precio": 3.5,
+      "Estado": "Activo"
+    },
+    {
+      "IDProducto": 4,
+      "Nombre": "Televisor",
+      "IDClasificacion": 1,
+      "Precio": 1800.0,
+      "Estado": "Activo"
+    },
+    {
+      "IDProducto": 5,
+      "Nombre": "Mesa",
+      "IDClasificacion": 2,
+      "Precio": 250.0,
+      "Estado": "Activo"
+    },
+    {
+      "IDProducto": 6,
+      "Nombre": "Pan",
+      "IDClasificacion": 3,
+      "Precio": 1.0,
+      "Estado": "Activo"
+    }
+  ],
+  "tblClasificacion": [
+    {
+      "IDClasificacion": 1,
+      "Nombre": "Tecnología"
+    },
+    {
+      "IDClasificacion": 2,
+      "Nombre": "Hogar"
+    },
+    {
+      "IDClasificacion": 3,
+      "Nombre": "Alimentos"
+    }
+  ],
+  "tblDetalleFactura": [
+    {
+      "NroFactura": 1,
+      "IDProducto": 1,
+      "Cantidad": 3,
+      "ValorUnitario": 3000.0
+    },
+    {
+      "NroFactura": 1,
+      "IDProducto": 2,
+      "Cantidad": 4,
+      "ValorUnitario": 150.0
+    },
+    {
+      "NroFactura": 1,
+      "IDProducto": 3,
+      "Cantidad": 2,
+      "ValorUnitario": 3.5
+    },
+    {
+      "NroFactura": 1,
+      "IDProducto": 4,
+      "Cantidad": 2,
+      "ValorUnitario": 1800.0
+    },
+    {
+      "NroFactura": 1,
+      "IDProducto": 5,
+      "Cantidad": 4,
+      "ValorUnitario": 250.0
+    },
+    {
+      "NroFactura": 1,
+      "IDProducto": 6,
+      "Cantidad": 5,
+      "ValorUnitario": 1.0
+    },
+    {
+      "NroFactura": 2,
+      "IDProducto": 1,
+      "Cantidad": 2,
+      "ValorUnitario": 3000.0
+    },
+    {
+      "NroFactura": 2,
+      "IDProducto": 2,
+      "Cantidad": 5,
+      "ValorUnitario": 150.0
+    },
+    {
+      "NroFactura": 2,
+      "IDProducto": 3,
+      "Cantidad": 1,
+      "ValorUnitario": 3.5
+    },
+    {
+      "NroFactura": 2,
+      "IDProducto": 4,
+      "Cantidad": 2,
+      "ValorUnitario": 1800.0
+    },
+    {
+      "NroFactura": 2,
+      "IDProducto": 5,
+      "Cantidad": 4,
+      "ValorUnitario": 250.0
+    },
+    {
+      "NroFactura": 2,
+      "IDProducto": 6,
+      "Cantidad": 5,
+      "ValorUnitario": 1.0
+    },
+    {
+      "NroFactura": 3,
+      "IDProducto": 1,
+      "Cantidad": 2,
+      "ValorUnitario": 3000.0
+    },
+    {
+      "NroFactura": 3,
+      "IDProducto": 2,
+      "Cantidad": 1,
+      "ValorUnitario": 150.0
+    },
+    {
+      "NroFactura": 3,
+      "IDProducto": 3,
+      "Cantidad": 4,
+      "ValorUnitario": 3.5
+    },
+    {
+      "NroFactura": 3,
+      "IDProducto": 4,
+      "Cantidad": 2,
+      "ValorUnitario": 1800.0
+    },
+    {
+      "NroFactura": 3,
+      "IDProducto": 5,
+      "Cantidad": 2,
+      "ValorUnitario": 250.0
+    },
+    {
+      "NroFactura": 3,
+      "IDProducto": 6,
+      "Cantidad": 4,
+      "ValorUnitario": 1.0
+    },
+    {
+      "NroFactura": 4,
+      "IDProducto": 1,
+      "Cantidad": 3,
+      "ValorUnitario": 3000.0
+    },
+    {
+      "NroFactura": 4,
+      "IDProducto": 2,
+      "Cantidad": 2,
+      "ValorUnitario": 150.0
+    },
+    {
+      "NroFactura": 4,
+      "IDProducto": 3,
+      "Cantidad": 2,
+      "ValorUnitario": 3.5
+    },
+    {
+      "NroFactura": 4,
+      "IDProducto": 4,
+      "Cantidad": 1,
+      "ValorUnitario": 1800.0
+    },
+    {
+      "NroFactura": 4,
+      "IDProducto": 5,
+      "Cantidad": 2,
+      "ValorUnitario": 250.0
+    },
+    {
+      "NroFactura": 4,
+      "IDProducto": 6,
+      "Cantidad": 5,
+      "ValorUnitario": 1.0
+    },
+    {
+      "NroFactura": 5,
+      "IDProducto": 1,
+      "Cantidad": 2,
+      "ValorUnitario": 3000.0
+    },
+    {
+      "NroFactura": 5,
+      "IDProducto": 2,
+      "Cantidad": 2,
+      "ValorUnitario": 150.0
+    },
+    {
+      "NroFactura": 5,
+      "IDProducto": 3,
+      "Cantidad": 1,
+      "ValorUnitario": 3.5
+    },
+    {
+      "NroFactura": 5,
+      "IDProducto": 4,
+      "Cantidad": 5,
+      "ValorUnitario": 1800.0
+    },
+    {
+      "NroFactura": 5,
+      "IDProducto": 5,
+      "Cantidad": 1,
+      "ValorUnitario": 250.0
+    },
+    {
+      "NroFactura": 5,
+      "IDProducto": 6,
+      "Cantidad": 5,
+      "ValorUnitario": 1.0
+    },
+    {
+      "NroFactura": 6,
+      "IDProducto": 1,
+      "Cantidad": 4,
+      "ValorUnitario": 3000.0
+    },
+    {
+      "NroFactura": 6,
+      "IDProducto": 2,
+      "Cantidad": 1,
+      "ValorUnitario": 150.0
+    },
+    {
+      "NroFactura": 6,
+      "IDProducto": 3,
+      "Cantidad": 4,
+      "ValorUnitario": 3.5
+    },
+    {
+      "NroFactura": 6,
+      "IDProducto": 4,
+      "Cantidad": 1,
+      "ValorUnitario": 1800.0
+    },
+    {
+      "NroFactura": 6,
+      "IDProducto": 5,
+      "Cantidad": 3,
+      "ValorUnitario": 250.0
+    },
+    {
+      "NroFactura": 6,
+      "IDProducto": 6,
+      "Cantidad": 4,
+      "ValorUnitario": 1.0
+    },
+    {
+      "NroFactura": 7,
+      "IDProducto": 1,
+      "Cantidad": 3,
+      "ValorUnitario": 3000.0
+    },
+    {
+      "NroFactura": 7,
+      "IDProducto": 2,
+      "Cantidad": 4,
+      "ValorUnitario": 150.0
+    },
+    {
+      "NroFactura": 7,
+      "IDProducto": 3,
+      "Cantidad": 3,
+      "ValorUnitario": 3.5
+    },
+    {
+      "NroFactura": 7,
+      "IDProducto": 4,
+      "Cantidad": 2,
+      "ValorUnitario": 1800.0
+    },
+    {
+      "NroFactura": 7,
+      "IDProducto": 5,
+      "Cantidad": 1,
+      "ValorUnitario": 250.0
+    },
+    {
+      "NroFactura": 7,
+      "IDProducto": 6,
+      "Cantidad": 5,
+      "ValorUnitario": 1.0
+    },
+    {
+      "NroFactura": 8,
+      "IDProducto": 1,
+      "Cantidad": 2,
+      "ValorUnitario": 3000.0
+    },
+    {
+      "NroFactura": 8,
+      "IDProducto": 2,
+      "Cantidad": 2,
+      "ValorUnitario": 150.0
+    },
+    {
+      "NroFactura": 8,
+      "IDProducto": 3,
+      "Cantidad": 4,
+      "ValorUnitario": 3.5
+    },
+    {
+      "NroFactura": 8,
+      "IDProducto": 4,
+      "Cantidad": 3,
+      "ValorUnitario": 1800.0
+    },
+    {
+      "NroFactura": 8,
+      "IDProducto": 5,
+      "Cantidad": 2,
+      "ValorUnitario": 250.0
+    },
+    {
+      "NroFactura": 8,
+      "IDProducto": 6,
+      "Cantidad": 4,
+      "ValorUnitario": 1.0
+    },
+    {
+      "NroFactura": 9,
+      "IDProducto": 1,
+      "Cantidad": 1,
+      "ValorUnitario": 3000.0
+    },
+    {
+      "NroFactura": 9,
+      "IDProducto": 2,
+      "Cantidad": 1,
+      "ValorUnitario": 150.0
+    },
+    {
+      "NroFactura": 9,
+      "IDProducto": 3,
+      "Cantidad": 1,
+      "ValorUnitario": 3.5
+    },
+    {
+      "NroFactura": 9,
+      "IDProducto": 4,
+      "Cantidad": 4,
+      "ValorUnitario": 1800.0
+    },
+    {
+      "NroFactura": 9,
+      "IDProducto": 5,
+      "Cantidad": 1,
+      "ValorUnitario": 250.0
+    },
+    {
+      "NroFactura": 9,
+      "IDProducto": 6,
+      "Cantidad": 4,
+      "ValorUnitario": 1.0
+    },
+    {
+      "NroFactura": 10,
+      "IDProducto": 1,
+      "Cantidad": 3,
+      "ValorUnitario": 3000.0
+    },
+    {
+      "NroFactura": 10,
+      "IDProducto": 2,
+      "Cantidad": 3,
+      "ValorUnitario": 150.0
+    },
+    {
+      "NroFactura": 10,
+      "IDProducto": 3,
+      "Cantidad": 5,
+      "ValorUnitario": 3.5
+    },
+    {
+      "NroFactura": 10,
+      "IDProducto": 4,
+      "Cantidad": 5,
+      "ValorUnitario": 1800.0
+    },
+    {
+      "NroFactura": 10,
+      "IDProducto": 5,
+      "Cantidad": 4,
+      "ValorUnitario": 250.0
+    },
+    {
+      "NroFactura": 10,
+      "IDProducto": 6,
+      "Cantidad": 3,
+      "ValorUnitario": 1.0
+    },
+    {
+      "NroFactura": 11,
+      "IDProducto": 1,
+      "Cantidad": 3,
+      "ValorUnitario": 3000.0
+    },
+    {
+      "NroFactura": 11,
+      "IDProducto": 2,
+      "Cantidad": 5,
+      "ValorUnitario": 150.0
+    },
+    {
+      "NroFactura": 11,
+      "IDProducto": 3,
+      "Cantidad": 1,
+      "ValorUnitario": 3.5
+    },
+    {
+      "NroFactura": 11,
+      "IDProducto": 4,
+      "Cantidad": 3,
+      "ValorUnitario": 1800.0
+    },
+    {
+      "NroFactura": 11,
+      "IDProducto": 5,
+      "Cantidad": 2,
+      "ValorUnitario": 250.0
+    },
+    {
+      "NroFactura": 11,
+      "IDProducto": 6,
+      "Cantidad": 5,
+      "ValorUnitario": 1.0
+    },
+    {
+      "NroFactura": 12,
+      "IDProducto": 1,
+      "Cantidad": 5,
+      "ValorUnitario": 3000.0
+    },
+    {
+      "NroFactura": 12,
+      "IDProducto": 2,
+      "Cantidad": 5,
+      "ValorUnitario": 150.0
+    },
+    {
+      "NroFactura": 12,
+      "IDProducto": 3,
+      "Cantidad": 2,
+      "ValorUnitario": 3.5
+    },
+    {
+      "NroFactura": 12,
+      "IDProducto": 4,
+      "Cantidad": 1,
+      "ValorUnitario": 1800.0
+    },
+    {
+      "NroFactura": 12,
+      "IDProducto": 5,
+      "Cantidad": 1,
+      "ValorUnitario": 250.0
+    },
+    {
+      "NroFactura": 12,
+      "IDProducto": 6,
+      "Cantidad": 5,
+      "ValorUnitario": 1.0
+    }
+  ]
+}
